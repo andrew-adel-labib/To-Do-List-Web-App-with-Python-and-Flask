@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result With Condition Page</title>
+</head>
+<body>
+    <h1>Welocme to Result With Condition Page!</h1>
+    <p>Based on the marks, You have {{results}} .</p>
+    
+    {% if results >= 50 %}
+    <p> You have passed with marks {{results}} .</p>
+    {% else %}
+    <p>You have failed with marks {{results}} .</p>
+    {% endif %}
+</body>
+</html>

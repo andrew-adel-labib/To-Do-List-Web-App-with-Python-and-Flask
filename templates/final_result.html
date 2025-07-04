@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Result Page</title>
+</head>
+<body>
+    <h1>Welcome to Final Result Page!</h1>
+    <table border="2">
+        <thead>
+            <tr>
+                {% for key in results.keys() %}
+                {# This the dictionary key #}
+                <th>{{key}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for value in results.values() %}
+                {# This the dictionary value #}
+                <td>{{value}}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
